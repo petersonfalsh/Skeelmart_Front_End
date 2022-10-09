@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto, 'helvetica Neue', helvetica, arial, sans-serif";
+}
+
+.topnav{
+   margin-top: 10px;
+}
+
+
+.topnav a {
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+}
+
+.right{
+    float: right;
+}
+  
+.topnav a:hover {
+ 
+    color: #21A5F1;
+}
+
+.post-btn{
+    background-color: #D90082;
+    padding: 10px 15px;
+    margin: 0px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.postbtn:hover{
+    background-color: #cc1583;
+}
+
+.bottomnav{
+    background-color: black;
+    margin-top: 30px;
+}
+
+.bottomnav a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.hero-section{
+    background-color: #858588;
+    height: 500px;
+}
+
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.api-image1{
+    background-image: url(../img/api-image1.png);
+    size: cover;
+    padding: 10%;
+}
+
+.api-image2{
+    background-image: url(../img/api-image2.png);
+    size: cover;
+    padding: 10%;
+}
+
+.footer{
+    background-color: #161E2C;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .logo{
+        width: 40%;
+    }
+
+    .topnav a{
+        display: none;
+    }
+    
+    .topnav .right a{
+        display: block;
+        flex-direction: row;
+        padding: 3px 3px;
+        font-size: large;
+
+    }
+
+    .topnav .right button{
+        display: none;
+    }
+
+    .bottomnav a{
+        display: inline;
+    }
+
+    .hero-word{
+        font-size: 45px !important;
+    }
+
+    .hero-para{
+        font-size: 20px;
+    }
+
+    .btn{
+        width: 100%;
+        margin: 5px;
+        padding-right: 5px;
+        text-align: center;
+    }
+
+    .img1, .img2, .img3, .img4{
+        display: none;
+    }
+
+    .service-section-header1{
+        font-size: 28px;
+    }
+
+    .gallery{
+        width:100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero-word{
+        font-size: 60px !important;
+    }
+
+    .hero-para{
+        font-size: 30px;
+    }
+
+    .service-section-header1{
+        font-size: 50px !important;
+    }
+
+    
+}
