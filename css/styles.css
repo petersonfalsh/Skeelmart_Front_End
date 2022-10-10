@@ -73,12 +73,14 @@ body{
 
 .api-image1{
     background-image: url(../img/api-image1.png);
+    height: 25rem;
     size: cover;
     padding: 10%;
 }
 
 .api-image2{
     background-image: url(../img/api-image2.png);
+    height: 25rem;
     size: cover;
     padding: 10%;
 }
@@ -90,6 +92,31 @@ body{
 a{
     text-decoration: none;
 }
+
+/*How it works page*/
+
+.HIW-herobg{
+    background-image: url(../img/HowItWorks.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+
+}
+
+.HIW-text{
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.HIW-hero-text{
+    font-size: 60px !important;
+}
+
+.what-are-you-waiting-for{
+    background-color: #1F2836;
+}
+
+
 
 @media (max-width: 600px) {
     .logo{
@@ -142,7 +169,27 @@ a{
     .gallery{
         width:100%;
     }
-}
+
+    .HIW-herobg{
+        background-image: url(../img/HowItWorks.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 700px;
+    }
+
+    .HIW-button{
+        margin-top: 30px;
+    }
+
+    .possibilities-section{
+        margin-left: 12px;
+    }
+
+    .livechat-mobile-app-section, .set-up-payment-section{
+        display: flex;
+        flex-direction: column;
+    }
+
 
 @media (min-width: 768px) {
     .hero-word{
@@ -157,5 +204,16 @@ a{
         font-size: 50px !important;
     }
 
+    .HIW-hero-text{
+        font-size: 40px !important;
+    }
+
+    .HIW-text{
+        margin-left: 5%;
+        margin-top: 0% !important;
+        padding: 0% !important;
+    }   
     
+}
+
 }
