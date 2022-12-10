@@ -239,6 +239,28 @@ a{
     background-color: #1F2836;
 }
 
+.btn-how-it-works{
+    padding: 5px 10px;
+    background-color: #cc1583;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Media Queries for How-it-works page */
+@media (min-width: 768px) {
+    .HIW-button{
+        display: flex;  
+    } 
+}
+
+@media (max-width: 320px) {
+    .btn-how-it-works{
+        width: 100%;
+        margin-left: 0 !important;
+    }
+}
+
 
 /* 
 
