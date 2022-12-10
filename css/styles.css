@@ -8,10 +8,55 @@ body{
     font-family: "Roboto, 'helvetica Neue', helvetica, arial, sans-serif";
 }
 
-.topnav{
-   margin-top: 10px;
+.nav-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 70px;
+    padding: 0 30px;
 }
 
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 100px;
+    color: black !important;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: blue;
+}
+
+/* .nav-flex-1{
+    padding-top: 10px;
+} */
+
+.header-button{
+    background-color: #D90082;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin: 0;
+    font-weight: 600;
+}
+
+
+.sticky-header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: #fff;
+    padding:0 130px;
+    height: 70px;
+}
 
 .topnav a {
     color: black;
@@ -19,28 +64,16 @@ body{
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    text-align: center;
 }
 
-.right{
-    float: right;
-}
-  
+
+   */
 .topnav a:hover {
  
     color: #21A5F1;
 }
 
-.post-btn{
-    background-color: #D90082;
-    padding: 10px 15px;
-    margin: 0px;
-    color: white;
-    font-weight: 600;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+
 
 .postbtn:hover{
     background-color: #cc1583;
@@ -48,7 +81,7 @@ body{
 
 .bottomnav{
     background-color: black;
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 
 .bottomnav a{
@@ -60,9 +93,99 @@ body{
     text-align: center;
 }
 
+.header-text{
+    margin-top: 150px;
+}
+
+.header-larger-text{
+    font-size: 80px;
+}
+
+.header-smaller-text{
+    font-size: 25px;
+}
+
+
+.hero-background{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/shake_1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* opacity: 0.2; */
+    transition: 5s;
+
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes animate{
+    0%{
+        background-image: url(../img/shake_2.jpg);
+    }
+
+    20%{
+        background-image: url(../img/shake-3_small.jpg);
+    }
+
+    40%{
+        background-image: url(../img/shake-4_small.jpg);
+    }
+
+    60%{
+        background-image: url(../img/shake_1.jpg);
+    }
+
+    80%{
+        background-image: url(../img/shake_3.jpg);
+    }
+
+    80%{
+        background-image: url(../img/shake-4_large.jpg);
+    }
+}
+
+.hero-button{
+    padding: 10px 20px;
+    background-color: #cc1583;
+    font-size: 30px;
+    border:none;
+    border-radius: 7px;
+    color: #fff;
+    margin: 10px;
+}
+
+.hero-button:hover{
+    background-color: rgb(118, 13, 18);
+    color: #fff;
+    transform: scale(1, 1.2);
+}
+
+
+
+.buttons{
+    margin-top: 30px;
+    margin-right: 15px;
+}
+
+.btn .large:hover{
+    background-color: #cc1583 !important;
+}
+
+
+.large{
+    font-size: 30px;
+}
+
 .hero-section{
     background-color: #858588;
-    height: 500px;
+    /* height: 500px; */
 }
 
 
@@ -117,103 +240,120 @@ a{
 }
 
 
+/* 
 
-@media (max-width: 600px) {
-    .logo{
-        width: 40%;
-    }
+Responsive Designs - Media Queries
 
-    .topnav a{
-        display: none;
-    }
-    
-    .topnav .right a{
-        display: block;
-        flex-direction: row;
-        padding: 3px 3px;
-        font-size: large;
+*/
 
-    }
 
-    .topnav .right button{
-        display: none;
-    }
-
-    .bottomnav a{
-        display: inline;
-    }
-
-    .hero-word{
-        font-size: 45px !important;
-    }
-
-    .hero-para{
-        font-size: 20px;
-    }
-
-    .btn{
-        width: 100%;
-        margin: 5px;
-        padding-right: 5px;
-        text-align: center;
-    }
-
-    .img1, .img2, .img3, .img4{
-        display: none;
-    }
-
-    .service-section-header1{
-        font-size: 28px;
-    }
-
-    .gallery{
-        width:100%;
-    }
-
-    .HIW-herobg{
-        background-image: url(../img/HowItWorks.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 700px;
-    }
-
-    .HIW-button{
-        margin-top: 30px;
-    }
-
-    .possibilities-section{
-        margin-left: 12px;
-    }
-
-    .livechat-mobile-app-section, .set-up-payment-section{
+@media (max-width: 430px) {
+    .nav-header{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: white;
+        height: 70px;
+        padding: 0 3px;
+        margin-right: 5px;
     }
 
-
-@media (min-width: 768px) {
-    .hero-word{
-        font-size: 60px !important;
+    .nav-1, .nav-2{
+        display: none;
     }
 
-    .hero-para{
+    .nav-flex-1 img{
+        width: 30%;
+        margin: 0px !important;
+    }
+
+    .header-button{
+        display: none;
+    }
+
+    .nav-flex-2 .link-2{
+        margin-right: 2px !important;
+    }
+
+    /*bottom naviagation 2 */
+
+    .bottomnav a {
+      padding: 2px 2px;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .container .nav-tabs{
+        margin-right: 15px;
+    }
+
+    /*hero-background section */
+
+    .hero-background{
+        height: 100vh;
+        width: 100%;
+        background-color: black;
+        background-image: none;
+        animation: none;
+        height: 600px;
+    }
+
+    .header-text{
+        margin-top: 10px;
+    }
+
+    .header-larger-text{
+        margin-top: 50px;
+        font-size: 40px;
+    }
+
+    .hero-button{
+        padding: 10px 20px;
+        background-color: #cc1583;
         font-size: 30px;
+        border:none;
+        border-radius: 7px;
+        color: #fff;
+        margin: 10px;
     }
 
-    .service-section-header1{
-        font-size: 50px !important;
-    }
-
-    .HIW-hero-text{
-        font-size: 40px !important;
-    }
-
-    .HIW-text{
-        margin-left: 5%;
-        margin-top: 0% !important;
-        padding: 0% !important;
-    }   
-    
 }
 
+@media (max-width: 768px) and (min-width: 431px) {
+    .sticky-header{
+        padding: 0 70px;
+    }
+
+    .nav-flex-2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .header-button{
+        background-color: #D90082;
+        padding: 10px 15px;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        margin-left: 0 !important;
+    }
+
+    .sticky-header{
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background: #fff;
+        height: 70px;
+    }
 }
+
+
+
+
+
+
+
+
